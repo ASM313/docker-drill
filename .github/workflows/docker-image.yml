@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
     - run: docker build . --file Dockerfile --tag atiq07/docker-flask:latest
     - name: Push the Docker image
-      run: docker login -u atiq07 -p ${{ secrets.DOCKER_TOKEN }} && docker push atiq07/docker-flask:latest
+    - run: docker login -u atiq07 -p ${{ secrets.DOCKER_TOKEN }} && docker push atiq07/docker-flask:latest
